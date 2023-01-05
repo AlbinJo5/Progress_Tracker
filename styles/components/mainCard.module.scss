@@ -1,0 +1,58 @@
+@import '../theme.scss';
+
+.main_card{
+    box-shadow: 0 0 0.5vw $tertiary;
+    width: max-content;
+    margin: 2vw;
+    border-radius: 1vw;
+    padding: 0 2vw;
+
+    h3{
+        color: $tertiary;
+        font-size: 1.5vw;
+        padding: 1VW 0;
+    }
+    p{
+        color: $secondary;
+        font-size: 1vw;
+    }
+
+    .progress{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1vw 0;
+        .progress_bar_container{
+            width: 60%;
+            .progress_bar{
+                
+                height: 0.5vw;
+                background-color: $secondary;
+                border-radius: 0.5vw;
+            }
+        }
+        p{
+            margin-left: 1vw;
+            color: $secondary;
+            font-size: .9vw;
+            width: 40%;
+        }
+        
+    }
+
+    .icons{
+        padding: 1vw 0;
+        display: flex;
+        gap: 3vw;
+        img{
+            width: 1.5vw;
+            height: max-content;
+            cursor: pointer;
+                transition: all 0.3s ease-in-out;
+            &:hover{
+                transform: scale(1.5);
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+}

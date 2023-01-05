@@ -1,0 +1,33 @@
+@import './theme.scss';
+
+.home{
+     
+
+    h1{
+        color: $dark;
+        font-size: 3vw;
+        display: flex;
+        justify-content: center;
+        margin-top: 3vw;
+    }
+    .add_button {
+        position: fixed;
+        bottom: 2vw;
+        right: 2vw;
+        border: none;
+        background-color: $tertiary;
+        color: $light;
+        font-size: 2vw;
+        padding: 1vw 2vw;
+        border-radius: 2vw;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        &:hover{
+            background-color: $light;
+            color: $tertiary;
+            box-shadow: 0 0 0.5vw $tertiary;
+            transition: all 0.3s ease-in-out;
+
+        }
+      }
+}
