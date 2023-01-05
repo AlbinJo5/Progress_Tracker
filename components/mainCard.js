@@ -5,8 +5,8 @@ import shareIcon from '../public/assets/icons/share.svg'
 import editIcon from '../public/assets/icons/edit.svg'
 import deleteIcon from '../public/assets/icons/trash.svg'
 
-function MainCard({name, description, progress}) {
-   
+function MainCard({item}) {
+  const {name, description, progress} = item
   return (
     <div className={styles.main_card} style={{
       boxShadow: progress < 50 ? '0 0 1vw .05vw #FF0000' : progress < 80 ? '0 0 1vw .05vw #FFA500' : '0 0 1vw .05vw #00FF00'
